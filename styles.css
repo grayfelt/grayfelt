@@ -1,19 +1,7 @@
 html {
-  background-color: #A9A9A9;
-}
-.background {
-    padding: 200px;
-    position: absolute;
-    z-index: -2;
-    background-attachment:fixed;
-
-}
-.background img {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.35;
+  background-image:url('piet-mondrian-background.jpg');
+  background-color: rgba(105, 105, 105, 0.6);
+  background-blend-mode: darken;
 }
 .blob {
   position:relative;
@@ -32,9 +20,9 @@ html {
   margin:auto;
   text-shadow: 2px 2px #D3D3D3;
   padding-bottom:40px;
-  -moz-box-shadow: 0 0 6px #808080;
-  -webkit-box-shadow: 0 0 6px #808080;
-  box-shadow: 0 0 10px #808080;
+  -moz-box-shadow: 0 0 6px rgb(0,0,0,.7);
+  -webkit-box-shadow: 0 0 6px rgb(0,0,0,.7);
+  box-shadow: 0 0 10px rgb(0,0,0,.7);
 }
 .welcome {
   font-family: "Helvetica", "georgia", "times new roman";
@@ -80,15 +68,19 @@ html {
     letter-spacing: 0px;
 }
 .collapsible-menu {
+    margin-top:10px;
     width:135px;
-    margin:auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
     background-color:#808080;
     padding: 0px 30px;
     border-style:solid;
-    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-    box-shadow: 0px 2px 0px rgba(34,34,34,0.6);
-}
+    -moz-box-shadow: 0 0 6px rgb(0,0,0,.7);
+    -webkit-box-shadow: 0 0 6px rgb(0,0,0,.7);
+    box-shadow: 0 0 10px rgb(0,0,0,.7);
+    overflow-y: hidden;
+  }
 .collapsible-menu ul {
     list-style-type: none;
     padding: 0;
@@ -128,4 +120,21 @@ input:checked ~ label {
 }
 input:checked ~ .menu-content {
     max-height: 100%;
+}
+.in-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:"Fira Sans", sans-serif;
+  text-align:center;
+}
+.progress-text {
+  background-color:rgba(225,225,225,.5);
+  text-shadow:1px 1px rgba(0,0,0,.5);
+}
+.version {
+  font-family:"Lucida Console", "monospace";
+  position: absolute;
+  bottom:0;
+  right:5px;
 }
