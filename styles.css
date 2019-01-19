@@ -155,8 +155,8 @@ input:checked ~ .menu-content {
   margin-left:30px;
   background-color:rgba(150,150,150,.8);
   display:block;
-  width:300px;
-  height:50px;
+  max-width:300px;
+  max-height:50px;
   width:100%;
   height:100%;
   -moz-box-shadow: 0 0 6px rgb(0,0,0,.7);
@@ -170,14 +170,88 @@ height:30%;
 -webkit-box-shadow: 0 0 6px rgb(0,0,0,.7);
 box-shadow: 0 0 10px rgb(0,0,0,.7);
 }
-.album
-{width:40%;
-height:40%;
-padding:40px;
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+
+h2 {
+  font-size:1em;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height:1em;
+  padding-bottom: 1em;
+  color: #FB667A;
+}
+
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FB667A;
+  text-decoration: none;
+}
+
+.blue { color: #185875; }
+.yellow { color: #FFF842; }
+
+.container th h1 {
+	  font-weight: bold;
+	  font-size: 1em;
+  text-align: left;
+  color: #185875;
+  font-family: 'Fira Sans', sans-serif;
+  text-shadow:1px 1px rgba(0,0,0,.5);
 
 }
-.album, img{
-  padding:10px;
-    -webkit-filter: drop-shadow(5px 5px 5px #000000);
-    filter: drop-shadow(5px 5px 5px #000000);
+
+.container td {
+	  font-weight: normal;
+	  font-size: 1em;
+    font-family: 'Fira Sans', sans-serif;
+    text-shadow:1px 1px rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
+	        box-shadow: 0 2px 2px -2px #0E1119;
+        border-style:solid;
+        border-color: #000000;
+}
+
+.container {
+	  text-align: left;
+	  overflow: hidden;
+	  width: 80%;
+	  margin: 0 auto;
+  display: table;
+  padding: 0 0 4em 0;
+}
+
+.container td, .container th {
+	  padding-bottom: 1%;
+	  padding-top: 1%;
+  padding-left:1%;
+}
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+	  background-color: #323C50;
+    border-style:solid;
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+	  background-color: #2C3446;
+
+}
+
+.container th {
+	  background-color: #1F2739;
+
+}
+
+.container td:first-child { color: #FB667A; }
+
+
+@media (max-width: 800px) {
+.container td:nth-child(4),
+.container th:nth-child(4) { display: none; }
 }
