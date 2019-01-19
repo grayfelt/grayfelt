@@ -7,6 +7,7 @@ html {
   background-color:	rgba(90, 90, 90, 0.8);
   width:200px;
   margin:auto;
+  padding-right:20px;
   text-shadow: 2px 2px #D3D3D3;
   padding-bottom:40px;
   -moz-box-shadow: 0 0 6px rgb(0,0,0,.7);
@@ -20,7 +21,7 @@ html {
   letter-spacing: -3px;
   font-style:italic;
   padding:-10px;
-  margin:1px;
+  margin:auto;
 }
 .welcome1{
   font-family: "Helvetica", "georgia", "times new roman";
@@ -130,4 +131,40 @@ input:checked ~ .menu-content {
   position: absolute;
   bottom:0;
   right:5px;
+}
+.introduction {
+  float:left;
+  font-family: 'Fira Sans', sans-serif;
+  margin-left:70px;
+  margin-right:70px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color:rgba(90,90,90,.8);
+  -moz-box-shadow: 0 0 6px rgb(0,0,0,.7);
+  -webkit-box-shadow: 0 0 6px rgb(0,0,0,.7);
+  box-shadow: 0 0 10px rgb(0,0,0,.7);
+}
+.card1 {
+  margin-left:120px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.description {
+  padding:10px;
+  font-family: 'Fira Sans', sans-serif;
+  margin-left:30px;
+  background-color:rgba(150,150,150,.8);
+  display:block;
+  width:300px;
+  height:50px;
+  -moz-box-shadow: 0 0 6px rgb(0,0,0,.7);
+  -webkit-box-shadow: 0 0 6px rgb(0,0,0,.7);
+  box-shadow: 0 0 10px rgb(0,0,0,.7);
+}
+.oath-of-the-horatii {
+width:30%;
+height:30%;
+-moz-box-shadow: 0 0 6px rgb(0,0,0,.7);
+-webkit-box-shadow: 0 0 6px rgb(0,0,0,.7);
+box-shadow: 0 0 10px rgb(0,0,0,.7);
 }
