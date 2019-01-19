@@ -133,10 +133,10 @@ input:checked ~ .menu-content {
   right:5px;
 }
 .introduction {
-  float:left;
+  text-align: center;
   font-family: 'Fira Sans', sans-serif;
-  margin-left:70px;
-  margin-right:70px;
+  margin-left:300px;
+  margin-right:300px;
   margin-top: auto;
   margin-bottom: auto;
   background-color:rgba(90,90,90,.8);
