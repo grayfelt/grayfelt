@@ -147,7 +147,7 @@ padding:10px;
   display: table;
 }
 #images{
-  float:left;
+    display:inline-block;
     text-align:center;
     padding-top:10px;
     padding-left: 10px;
