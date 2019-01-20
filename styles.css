@@ -174,7 +174,10 @@ padding:10px;
 }
 
 .album {
-  padding:7px;
+  padding-top: 60px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
   float: left;
   width: 200px;
   height: 200px;
