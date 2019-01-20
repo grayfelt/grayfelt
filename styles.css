@@ -115,17 +115,6 @@ input:checked ~ label {
 input:checked ~ .menu-content {
     max-height: 100%;
 }
-.in-progress {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family:"Fira Sans", sans-serif;
-  text-align:center;
-}
-.progress-text {
-  background-color:rgba(90,90,90,.8);
-  text-shadow:1px 1px rgba(0,0,0,.5);
-}
 .version {
   font-family:"Lucida Console", "monospace";
   position: absolute;
@@ -144,114 +133,91 @@ input:checked ~ .menu-content {
   -webkit-box-shadow: 0 0 6px rgb(0,0,0,.7);
   box-shadow: 0 0 10px rgb(0,0,0,.7);
 }
-.card1 {
-  margin-left:120px;
-  margin-top: auto;
-  margin-bottom: auto;
+ .movie {
+float:left;
+width:200px;
+height:300px;
+padding:10px;
+-webkit-filter: drop-shadow(5px 5px 5px #000000);
+ filter: drop-shadow(5px 5px 5px #000000);
 }
-.description {
-  padding:10px;
-  font-family: 'Fira Sans', sans-serif;
-  margin-left:30px;
-  background-color:rgba(150,150,150,.8);
-  display:block;
-  max-width:300px;
-  max-height:50px;
-  width:100%;
-  height:100%;
-  -moz-box-shadow: 0 0 6px rgb(0,0,0,.7);
-  -webkit-box-shadow: 0 0 6px rgb(0,0,0,.7);
-  box-shadow: 0 0 10px rgb(0,0,0,.7);
-}
-.oath-of-the-horatii {
-width:30%;
-height:30%;
--moz-box-shadow: 0 0 6px rgb(0,0,0,.7);
--webkit-box-shadow: 0 0 6px rgb(0,0,0,.7);
-box-shadow: 0 0 10px rgb(0,0,0,.7);
-}
-@charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-
-
-h2 {
-  font-size:1em;
-  font-weight: 300;
-  text-align: center;
-  display: block;
-  line-height:1em;
-  padding-bottom: 1em;
-  color: #FB667A;
-}
-
-h2 a {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #FB667A;
-  text-decoration: none;
-}
-
-.blue { color: #185875; }
-.yellow { color: #FFF842; }
-
-.container th h1 {
-	  font-weight: bold;
-	  font-size: 1em;
-  text-align: left;
-  color: #185875;
-  font-family: 'Fira Sans', sans-serif;
-  text-shadow:1px 1px rgba(0,0,0,.5);
-
-}
-
-.container td {
-	  font-weight: normal;
-	  font-size: 1em;
-    font-family: 'Fira Sans', sans-serif;
-    text-shadow:1px 1px rgba(0,0,0,.5);
-  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
-	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
-	        box-shadow: 0 2px 2px -2px #0E1119;
-        border-style:solid;
-        border-color: #000000;
-}
-
-.container {
-	  text-align: left;
-	  overflow: hidden;
-	  width: 80%;
-	  margin: 0 auto;
+.movie::after{
+  content: "";
+  clear: both;
   display: table;
-  padding: 0 0 4em 0;
+}
+#images{
+  float:left;
+    text-align:center;
+    padding-top:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    -webkit-filter: drop-shadow(5px 5px 5px #000000);
+     filter: drop-shadow(5px 5px 5px #000000);
+}
+#images::after{
+  content:"";
+  clear:both;
+  display: table;
+}
+#images a{
+    text-decoration:none;
+ }
+#images, .caption{
+    font-family: 'Fira Sans', sans-serif;
+    color:white;
+    text-shadow: 2px 2px #000000;
+}
+.painter {
+  font-size:80%;
 }
 
-.container td, .container th {
-	  padding-bottom: 1%;
-	  padding-top: 1%;
-  padding-left:1%;
+.album {
+  padding:7px;
+  float: left;
+  width: 200px;
+  height: 200px;
+  -webkit-filter: drop-shadow(5px 5px 5px #000000);
+   filter: drop-shadow(5px 5px 5px #000000);
 }
 
-/* Background-color of the odd rows */
-.container tr:nth-child(odd) {
-	  background-color: #323C50;
-    border-style:solid;
+.desc {
+  font-family: 'Fira Sans', sans-serif;
+  padding: 10px;
+  text-align: center;
+  color:white;
+  text-shadow: 2px 2px #000000;
 }
-
-/* Background-color of the even rows */
-.container tr:nth-child(even) {
-	  background-color: #2C3446;
-
-}
-
-.container th {
-	  background-color: #1F2739;
+h2 {
+  color:white;
+  text-shadow: 2px 2px #000000;
+  font-family: 'Fira Sans', sans-serif;
+  text-align: center;
 
 }
-
-.container td:first-child { color: #FB667A; }
-
-
-@media (max-width: 800px) {
-.container td:nth-child(4),
-.container th:nth-child(4) { display: none; }
+h3 {
+  color:white;
+  text-shadow: 2px 2px #000000;
+  font-family: 'Fira Sans', sans-serif;
+  text-align: center;
+}
+.album-list {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  display:block;
+}
+.box {
+  margin-left:15px;
+  margin-top:15px;
+  margin-bottom:15px;
+  font-family: 'Fira Sans', sans-serif;
+  background-color:rgba(190, 190, 190, 0.8);
+  float:left;
+  width:300px;
+  height:130px;
+  border-style: solid;
+  padding:12px;
 }
