@@ -115,7 +115,7 @@ padding:10px;
   clear: both;
   display: table;
 }
-#images{
+.images{
     display:inline-block;
     text-align:center;
     padding-top:10px;
@@ -125,7 +125,7 @@ padding:10px;
     -webkit-filter: drop-shadow(5px 5px 5px #000000);
     filter: drop-shadow(5px 5px 5px #000000);
 }
-#images, .caption{
+.images, .caption{
     font-family: 'Fira Sans', sans-serif;
     color:white;
     text-decoration:none;
