@@ -4,6 +4,7 @@ html {
   background-blend-mode: darken;
 }
 .welcomes{
+  padding-top:20px;
   background-color:	rgba(90, 90, 90, 0.8);
   width:200px;
   margin:auto;
@@ -115,6 +116,7 @@ padding:10px;
   display: table;
 }
 #images{
+    display:inline-block;
     text-align:center;
     padding-top:10px;
     padding-left: 10px;
@@ -126,7 +128,7 @@ padding:10px;
 #images, .caption{
     font-family: 'Fira Sans', sans-serif;
     color:white;
-    text-shadow: 2px 2px #000000;
+    text-decoration:none;
 }
 .painter {
   font-size:80%;
@@ -156,7 +158,6 @@ h2 {
   text-shadow: 2px 2px #000000;
   font-family: 'Fira Sans', sans-serif;
   text-align: center;
-  padding-bottom:-40px;
 }
 h3 {
   color:white;
@@ -187,11 +188,7 @@ h3 {
   text-align:left;
 }
 .ratingtable {
-  padding:60px;
-  margin-right: auto;
-  align-items:center;
-  align-self:center;
-  float:left;
+
 }
 table{
   font-family: 'Fira Sans', sans-serif;
@@ -205,9 +202,6 @@ td{
   background-color:rgba(190, 190, 190, 0.8);
 }
 ol {
-  float:right;
-  padding:60px;
-  right:170px;
   font-family: 'Fira Sans', sans-serif;
   border:1px solid white;
   background-color:rgba(190, 190, 190, 0.8);
@@ -219,8 +213,13 @@ ol, h3 {
 }
 ol, li {
   margin-left:20px;
-  padding:12px;
 }
 .albumrank {
-  padding:45px;
+  height:200px;
+}
+.bottommusic{
+justify-content: center;
+padding-top:70px;
+display:flex;
+bottom:1px;
 }
