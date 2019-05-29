@@ -51,6 +51,7 @@ html {
   margin:-15px;
   color:#ffcc00;
 }
+
 .menu-content {
     font-family: 'Fira Sans', sans-serif;
     font-style:italic;
@@ -115,6 +116,7 @@ input:checked ~ label {
 input:checked ~ .menu-content {
     max-height: 100%;
 }
+
 .introduction {
   padding:10px;
   text-align: center;
@@ -223,20 +225,38 @@ h3 {
   text-align:left;
 }
 .ratingtable {
-  margin-left: 100px;
   margin-right: auto;
   align-items:center;
   align-self:center;
   padding:20px;
   position:absolute;
-  top:100px;
+  top: 1px;
 }
 table{
 font-family: 'Fira Sans', sans-serif;
 border:1px solid white;
 background-color:rgba(190, 190, 190, 0.8);
+-webkit-filter: drop-shadow(5px 5px 5px #000000);
+filter: drop-shadow(5px 5px 5px #000000);
 }
 td{
   border:1px solid white;
   background-color:rgba(190, 190, 190, 0.8);
+}
+ol {
+  position:absolute;
+  top:1px;
+  right:170px;
+  font-family: 'Fira Sans', sans-serif;
+  border:1px solid white;
+  background-color:rgba(190, 190, 190, 0.8);
+  -webkit-filter: drop-shadow(5px 5px 5px #000000);
+  filter: drop-shadow(5px 5px 5px #000000);
+}
+ol, h3 {
+  padding:10px;
+}
+ol, li {
+  margin-left:20px;
+  padding:12px;
 }
