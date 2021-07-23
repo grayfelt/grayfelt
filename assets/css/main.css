@@ -2247,6 +2247,9 @@ input, select, textarea {
 		border-bottom: none;
 		position: relative;
 	}
+		.icon img {
+			width:1rem;
+		}
 
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
