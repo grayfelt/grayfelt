@@ -1,84 +1,108 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
-<html>
-	<head>
-		<title>Grayson Felt</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Merriweather:ital,wght@0,400;1,300&display=swap" rel="stylesheet"> 
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Grayson Felt</a></h1>
-					</header>
+        <title>Grayson Felt</title>
+    </head>
+    <body class="bg-primary">
+      <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Bootstrap Sidebar</h3>
+            </div>
+    
+            <ul class="list-unstyled components">
+                <p>Dummy Heading</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    
+    </div>
+        <div class="whole p-3">
+          <div class ="px-5 p-3 my-3 justify-content-center container-fluid bg-secondary">
+                <h1 class="display-4 text-black">Welcome</h1>
+                <hr />
+                <div class="card border-dark mb-4 bg-card">
+                  <div class="card-header">
+                    <h4 class="display-6">A Very Long Title</h4>
+                    <p class="fw-light">05/10/2022 10:45pm</p>
+                  </div>
+                  <img src="assets/tartu_town_hall.jpg" alt="..." class="card-img-top" style="width:18rem; margin:1rem;">
+                  <div class="card-body fw-light">
+                    This is some text within a card body.
+                    <br>
+                    
+                  </div>
+                </div>
 
-				<!-- Main -->
-					<div id="main">
+                <div class="card border-dark mb-4 bg-card">
+                  <div class="card-header">
+                    <h4 class="display-6">A Very Long Title</h4>
+                    <p class="fw-light">05/10/2022 10:45pm</p>
+                  </div>
+                  <div class="card-body fw-light">
+                    This is some text within a card body.
+                  </div>
+                </div>
 
-
-						<!-- Post -->
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="#">About Me</a></h2>
-										<br>
-										<p><b>I am a student at Utah State University</b> and will be graduating in May of 2022. I currently work at Clear Learning Partners, contributing
-											research to improve learning outcomes for all students in Utah. 
-											<br>
-											<br>
-											<b>In my spare time I like to create art</b> in the mediums of oil/gouche paintings and charcoal/ink drawings. I also enjoy consuming other's art 
-											like reading classic literature, listening to music, watching movies, and studying my favorite painters.
-											<br>
-											<br>
-											<b>I have a passion for all things data.</b> Whether it be entering <i>Kaggle competitions</i>, coding live trading algorithms, or producing data-driven research, 
-											I am always looking to apply my skills to manipulate and interpret data.
-										</p>
-									</div>
-								</header>
-							</article>
-
-
-					</div>
-
-				<!-- Sidebar -->
-					<section id="sidebar">
-
-						<!-- Intro -->
-							<section id="intro">
-								<a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
-								<header>
-									<h2>Grayson Felt</h2>
-									<p>Economics, finance, computer science student at Utah State University interested in cross-sections between economics and computer science</p>
-								</header>
-								<br>
-								<a href="assets/Grayson Felt Resume.pdf" download class="button" target="_blank">Download Resume</a>
-							</section>
-
-						<!-- Footer -->
-							<section id="footer">
-								<ul class="icons">
-									<li><a href="https://github.com/grayfelt" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									<li><a href="https://www.linkedin.com/in/graysonfelt/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li> <a href="https://www.kaggle.com/graysonfelt" class="icon brands"><img src="images/kaggle.svg"><span class="label">Email</span></a></li>
-									<li><a href="mailto:graysonfelt@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+                <div class="card border-dark mb-4 bg-card">
+                  <div class="card-header">
+                    <h4 class="display-6">A Very Long Title</h4>
+                    <p class="fw-light">05/10/2022 10:45pm</p>
+                  </div>
+                  <div class="card-body fw-light">
+                    This is some text within a card body.
+                  </div>
+                </div>
+            </div>
+          </div>
+        </body>
+                   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

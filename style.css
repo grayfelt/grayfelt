@@ -1,0 +1,78 @@
+
+:root{
+    --light: #7C766A;
+    --dark: #4D473E;
+    --gray: #B8B8B8;
+    --white: #D9D9D9;
+    --black: #010400;
+    --purple: #594AF6;
+    --blue: #40B2B2;
+    --green: #AFB116;
+    --yellow: #D0A000;
+    --red: #A54738;
+}
+
+.background-image{
+    background-color: #dbe2e5;
+background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23a1c4d4' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  }
+
+.whole{
+    flex:1;
+}
+
+a:link{     color:var(--blue);  }
+a:visited { color:var(--purple);}
+
+.sidenav {
+    -webkit-box-shadow: 0px 10px 0px 1px var(--dark);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0px 10px 0px 1px var(--dark);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         0px 10px 0px 1px var(--dark);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    border-radius: 10px;
+    height: 86%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--white);
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:40px;
+  }
+  
+  .sidenav p{
+      margin-left:40px;
+  }
+
+  @media screen and (max-width: 1650px) {
+      .sidenav{
+          display:none !important
+      }
+      header, .post{
+          width:75%
+      }
+  }
+
+  .highlight{
+    text-decoration:underline 2px;
+    text-decoration-color:var(--yellow);
+}
+
+/* this is needed to make the content scrollable on larger screens */
+@media (min-width: 576px) {
+    .h-sm-100 {
+        height: 100%;
+    }
+}
+
+.card-image{
+    background-image: var(--image);
+    background-color: #cccccc; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    width: 100%; 
+    height: 0; 
+    padding-top: 150%;
+}
